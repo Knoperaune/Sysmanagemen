@@ -8,6 +8,6 @@ package Filters;
  *
  * @author phil
  */
-public interface PullFilter<OUT, IN> extends Filter{
+public interface PushFilter<IN, OUT> extends Filter {
     
 }
