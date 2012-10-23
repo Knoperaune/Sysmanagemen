@@ -4,13 +4,10 @@
  */
 package Pipes;
 
-import Filters.PullFilter;
-
 /**
  *
  * @author Kno
  */
-public interface PullPipe<OUT> extends Pipe{
-    PullFilter getPullFilter();
-    OUT read();
+public abstract class AbstractPipe {
+    
 }
