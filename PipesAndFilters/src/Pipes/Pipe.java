@@ -5,9 +5,10 @@
 package Pipes;
 
 /**
- *
- * @author Kno
+ *  Marker Interface für Pipes 
+ * @author phil
+ * @param <T> Datentyp für die übertragung
  */
-public interface Pipe {
+interface Pipe<T> {
     
 }

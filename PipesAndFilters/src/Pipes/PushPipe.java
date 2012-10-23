@@ -5,9 +5,15 @@
 package Pipes;
 
 /**
- *
- * @author Kno
+ * Eine Pipe zum Daten Pushen
+ * @author phil
+ * @param <T> Datentyp für die übertragung
  */
-public interface PushPipe<IN> extends Pipe{
-    void write(IN in);
+public interface PushPipe <T> extends Pipe<T> {
+    
+    /**
+     * Eine Methode zum Daten in die Pipe zu pushen
+     * @param data 
+     */
+    public abstract void push(T data);
 }
