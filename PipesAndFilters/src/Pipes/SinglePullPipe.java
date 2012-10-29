@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package Pipes;
+import org.apache.log4j.Logger;
 
 import Filters.PullFilter;
 
@@ -30,7 +31,8 @@ public class SinglePullPipe<T> implements PullPipe<T> {
     public T pull() {
     T output = _source.getOutput();
 		
-    System.out.println("pullng from: " + _source + "; data: " + output);
+    //System.out.println("pullng from: " + _source + "; data: " + output);
+    Logger.getLogger(SinglePullPipe.class).debug("destination: " + _source + "; data: " + output);
     return output;
     }
     
