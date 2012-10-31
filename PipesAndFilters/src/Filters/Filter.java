@@ -31,7 +31,7 @@ public abstract class Filter<SourceType, DestinationType> {
      * Gibt den Processor des Filters zurück
      * @return 
      */
-    protected GenericProcessor getProcessor() {
+    public GenericProcessor getProcessor() {
             return _processor;
     }
 }
